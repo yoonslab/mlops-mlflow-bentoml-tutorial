@@ -1,0 +1,15 @@
+service: "service:svc"
+labels:
+  owner: ds-team
+  stage: demo
+include:
+- "*.py"
+python:
+  packages:
+    - scikit-learn
+    - pandas
+    - numpy
+    - mlflow
+    - bentoml
+    - boto3
+    
